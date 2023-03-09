@@ -1,0 +1,11 @@
+<h1>{{ title }}</h1>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-sm-3">
+      <label>Username</label>
+      <input type="text" class="form-control" [(ngModel)]="username">
+      <p>current chosen username: {{username}}</p>
+      <button type="button" class="btn btn-primary btn-lg" [disabled]="username === ''" (click)="username = ''">Reset</button>
+    </div>
+  </div>
+</div>
